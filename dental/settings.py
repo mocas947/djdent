@@ -131,12 +131,12 @@ STATICFILES_DIRS = [
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
-#EMAIL_HOST = 'smtp.gmail.com'
-#EMAIL_PORT = 587
-#EMAIL_HOST_USER = 'momchileto@gmail.com'
-#EMAIL_HOST_PASSWORD = 'Cesha947'
-#EMAIL_USE_TLS = True
-#EMAIL_USE_SSL = False
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'momchileto@gmail.com'
+EMAIL_HOST_PASSWORD = 'Cesha947'
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
 
 """
 EMAIL_HOST = 'smtp.sbb.rs'
@@ -148,11 +148,12 @@ EMAIL_USE_SSL = True
 """
 
 # python -m smtpd - n -c DebuggingServer localhost:1025
+"""
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 1025
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = False
-
+"""
 
 django_heroku.settings(locals())
